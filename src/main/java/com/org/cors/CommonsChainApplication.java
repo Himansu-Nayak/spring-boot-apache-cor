@@ -12,9 +12,6 @@ public class CommonsChainApplication implements CommandLineRunner {
     @Autowired
     private SellVehicleChain sellVehicleChain;
 
-    @Autowired
-    private ContextBase contextBase;
-
 //	public static void main(String[] args) throws Exception {
 ////        Object[] sources = new Object[] {CommonsChainApplication.class, new ClassPathResource("applicationContext.groovy")};
 //        SpringApplication.run(CommonsChainApplication.class, args);
@@ -23,6 +20,7 @@ public class CommonsChainApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        ContextBase contextBase = new ContextBase();
         sellVehicleChain.execute(contextBase);
 
     }

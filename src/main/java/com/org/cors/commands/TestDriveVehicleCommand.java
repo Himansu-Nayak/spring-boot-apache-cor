@@ -7,13 +7,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CloseSaleResponsibility implements Command {
+public class TestDriveVehicleCommand implements Command {
 
-	private Logger logger = LoggerFactory.getLogger(CloseSaleResponsibility.class);
+	private Logger logger = LoggerFactory.getLogger(TestDriveVehicleCommand.class);
 
 	@Override
 	public boolean execute(Context ctx) {
-		logger.info("Congratulations {} , you bought a new car!", ctx.get("customerName"));
+		logger.info("Test drive the vehicle");
 		return false;
 	}
 }

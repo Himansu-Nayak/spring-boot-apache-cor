@@ -1,16 +1,16 @@
-import com.org.cors.commands.ArrangeFinancingResponsibility
-import com.org.cors.commands.CloseSaleResponsibility
-import com.org.cors.commands.GetCustomerInfoResponsibility
-import com.org.cors.commands.NegotiateSaleResponsibility
-import com.org.cors.commands.TestDriveVehicleResponsibility
+import com.org.cors.commands.ArrangeFinancingCommand
+import com.org.cors.commands.CloseSaleCommand
+import com.org.cors.commands.GetCustomerInfoCommand
+import com.org.cors.commands.NegotiateSaleCommand
+import com.org.cors.commands.TestDriveVehicleCommand
 import org.apache.commons.chain.impl.ChainBase
 
 beans {
-    getCustomerInfo(GetCustomerInfoResponsibility)
-    testDrive(TestDriveVehicleResponsibility)
-    negotiateSale(NegotiateSaleResponsibility)
-    arrangeFinancing(ArrangeFinancingResponsibility)
-    closeSale(CloseSaleResponsibility)
+    getCustomerInfo(GetCustomerInfoCommand)
+    testDrive(TestDriveVehicleCommand)
+    negotiateSale(NegotiateSaleCommand)
+    arrangeFinancing(ArrangeFinancingCommand)
+    closeSale(CloseSaleCommand)
 
     sellVehicleChain(ChainBase, [getCustomerInfo, testDrive, negotiateSale, arrangeFinancing, closeSale])
 }

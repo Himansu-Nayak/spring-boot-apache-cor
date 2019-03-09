@@ -4,7 +4,7 @@
     <property name="LOGS" value="./logs"/>
     <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
         <layout class="ch.qos.logback.classic.PatternLayout">
-            <Pattern>%black(%d{ISO8601}) %highlight(%-5level) [%blue(%t)] %yellow(%C{1.}): %msg%n%throwable</Pattern>
+            <Pattern>%logger{5}	%black(%d{ISO8601}) %highlight(%-5level) [%blue(%t)] %yellow(%C{1.}): %msg%n%throwable</Pattern>
         </layout>
     </appender>
          
@@ -30,7 +30,7 @@
     </root>
          
     <!-- LOG "com.baeldung*" at TRACE level -->
-    <logger name="com.baeldung" level="trace" additivity="false">
+    <logger name="com.org.cors" level="trace" additivity="false">
         <appender-ref ref="RollingFile"/>   
         <appender-ref ref="Console"/>
     </logger>

@@ -7,13 +7,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ArrangeFinancingResponsibility implements Command {
+public class NegotiateSaleCommand implements Command {
 
-	private Logger logger = LoggerFactory.getLogger(ArrangeFinancingResponsibility.class);
+	private Logger logger = LoggerFactory.getLogger(NegotiateSaleCommand.class);
 
 	@Override
 	public boolean execute(Context ctx) {
-		logger.info("Arrange financing");
+		logger.info("Negotiate sale");
 		return false;
 	}
 }

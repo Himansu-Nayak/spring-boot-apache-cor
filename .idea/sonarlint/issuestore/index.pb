@@ -60,3 +60,11 @@ t
 Dsrc/main/java/com/org/cors/commands/NegotiateSaleResponsibility.java,7\e\7e13a7bbc9a6fcec69b736129faabeef3dfeef1b
 w
 Gsrc/main/java/com/org/cors/commands/TestDriveVehicleResponsibility.java,6\2\627b695d35d727d35efe8b44ba81b1a163354784
+T
+$out/production/resources/bannner.txt,f\a\faedb84d43bc6d22e4558cf57c926b6a24ed3d1b
+X
+(out/production/resources/application.yml,f\f\ff0140d4b7522a8cb46d9174d189eda102dfd376
+b
+2out/production/resources/applicationContext.groovy,e\e\ee5258b430b929e1e7de6aa0ed706bf33cb224b3
+K
+logs/spring-boot-logger.log,2\e\2e759c24a2ba0f4d66a8106f3619e02d91eff778

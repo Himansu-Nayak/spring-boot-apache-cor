@@ -11,19 +11,19 @@ import javax.annotation.PostConstruct;
 public class SellVehicleChain extends ChainBase {
 
     @Autowired
-    private GetCustomerInfoResponsibility getCustomerInfoResponsibility;
+    private GetCustomerInfoCommand getCustomerInfoCommand;
 
     @Autowired
-    private TestDriveVehicleResponsibility testDriveVehicleResponsibility;
+    private TestDriveVehicleCommand testDriveVehicleCommand;
 
     @Autowired
-    private NegotiateSaleResponsibility negotiateSaleResponsibility;
+    private NegotiateSaleCommand negotiateSaleCommand;
 
     @Autowired
-    private ArrangeFinancingResponsibility arrangeFinancingResponsibility;
+    private ArrangeFinancingCommand arrangeFinancingCommand;
 
     @Autowired
-    private CloseSaleResponsibility closeSaleResponsibility;
+    private CloseSaleCommand closeSaleCommand;
 
     public SellVehicleChain() {
         super();
@@ -31,10 +31,10 @@ public class SellVehicleChain extends ChainBase {
 
     @PostConstruct
     public void init() {
-        addCommand(getCustomerInfoResponsibility);
-        addCommand(testDriveVehicleResponsibility);
-        addCommand(negotiateSaleResponsibility);
-        addCommand(arrangeFinancingResponsibility);
-        addCommand(closeSaleResponsibility);
+        addCommand(getCustomerInfoCommand);
+        addCommand(testDriveVehicleCommand);
+        addCommand(negotiateSaleCommand);
+        addCommand(arrangeFinancingCommand);
+        addCommand(closeSaleCommand);
     }
 }
